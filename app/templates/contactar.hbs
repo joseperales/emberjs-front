@@ -1,0 +1,89 @@
+<div class="ui page stackable segment animated fadeInUp">
+	<div class="ui horizontal icon divider">
+	  <i class="circular checkmark sign icon"></i>
+	</div>
+	  <div class="item">
+	    <div class="content">
+	    	<h1 class="herotext"><strong>Solo unos Datos para Contactarnos..</strong></h1>
+	      <h2 class="ui statistic">Y pronto atenderemos y le responderemos.</h2>
+	      <h2>{{model.firstName}}   {{model.lastName}}</h2>
+	      <h2>{{model.email}}</h2>
+	    </div>
+	  </div>
+	
+	<div class="ui clearing divider"></div>
+	<div class="ui form segment error">
+	  <p>Vamos Si esta interesado, Estamos encantados de Atenderte. Por favor Llena el Formulario!</p>
+	  
+	  <div class="two fields">
+	    <div class="field error">
+	      <label>First Name</label>
+	      <!--<input placeholder="Nombre" name="first-name" type="text">-->
+	      {{input valueBinding="model.firstName" placeholder="Nombre"}}
+	    </div>
+	    <div class="field error">
+	      <label>Last Name</label>
+	      <!--<input placeholder="Apellido" name="last-name" type="text">-->
+	      {{input valueBinding="model.lastName" placeholder="Apellido"}}
+	    </div>
+	  </div>
+		<label>Email</label>
+		<div class="ui left icon input">
+		  
+		  <!--<input type="text" placeholder="email@suemail.com"-->
+		  {{input valueBinding="model.email" placeholder="email@suemail.com"}}
+		  <i class="mail icon"></i>
+		</div>	
+		<div class="ui form">
+	  <div class="field">
+	    <label>Detalles</label>
+	    <textarea></textarea>
+	  </div>
+	</div>
+	  <br>	
+	  <div class="ui clearing divider"></div> 
+	  <!--<div class="ui blue submit button">Enviar</div>-->
+	  <div class="ui blue submit button" {{action submitAction target="controller"}}>Enviar</div>
+	</div>
+</div>
+
+<!--
+<div id="contact" class="section contact gray">
+    <div class="row">
+		<div class="large-12 columns">
+			<h2>Listo para Comenzar?</h2>
+			<span class="subheading">Si esta interesado, Estamos encantados de Atenderte.  Llena el Formulario !</span>
+
+		<form method="post" action="#" id="contactform">
+					<div>
+						<label for="name">Nombre</label>
+						<input type="text" class="input-field" id="name" name="name" value=""/>
+					</div>
+					<div>
+						<label for="email">E-mail</label>
+						<input type="text" class="input-field" id="email" name="email" value=""/>
+					</div>
+					<div>
+						<label>Solicitud o Requerimiento</label>
+						<textarea id="message" name="message"></textarea>
+					</div>
+					<a id="button-send" href="#" title="Send Email" class="button" style="width:100%;">Enviar</a>
+					<div id="success">Tu requerimiento ha sido enviado!</div>
+					<div id="error">No Disponemos de Email Ahora, por favor intente m&aacute;s tarde.</div>
+				</form>
+        </div>
+        </div>
+</div>
+
+
+
+<div class="container">
+  <div class="center-unit form-group last-unit size1of4 maintain-width">
+    <form>
+      <h2 class="h3">Login</h2>
+      <div>{{input type="text" class="size1of1" value=username placeholder="Github username\email"}}</div>
+      <div>{{input type="password" class="size1of1" value=password placeholder="Password"}}</div>
+      <button {{action 'contactar'}}>Login</button>
+    </form>
+  </div>
+</div>-->
