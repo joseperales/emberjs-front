@@ -28,4 +28,11 @@ Router.reopen({
   location: 'history'
 });
 
+Ember.Route.reopen({
+  render: function(controller, model) {
+    this._super();
+    window.scrollTo(0,0);
+  }
+});
+
 export default Router;

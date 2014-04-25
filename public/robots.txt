@@ -1,3 +1,24 @@
-# robotstxt.org/
-
 User-agent: *
+Allow: /front/
+Allow: /blog/
+Disallow: /backup/
+Disallow: /cgi-bin/
+Disallow: /clinic/
+Disallow: /clinic2/
+Disallow: /cgi-bin/
+Disallow: /vida2/
+Disallow: /vidamed/
+Disallow: /solifast/
+Disallow: /gym/
+Disallow: /clinic3/
+Disallow: /demo/
+Disallow: /clinic1/
+Disallow: /estandar/
+Disallow: /test/
+Disallow: /qa/
+Disallow: /dev/
+Disallow: /clinictest/
+Disallow: /sora/
+Disallow: /daniel/
+Disallow: /backup/
+Disallow: /estandard/

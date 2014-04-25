@@ -2,6 +2,308 @@
 html, body {
     margin: 5px;
 }
+/*******************************
+            Global
+*******************************/
+
+html,
+body {
+  font-size: 15px;
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background: #FFFFFF;
+  margin: 0px;
+  padding: 0px;
+  color: #545454;
+  text-rendering: optimizeLegibility;
+  min-width: 320px;
+}
+
+/*******************************
+          UI Overrides
+*******************************/
+
+.ui.header {
+  font-family: 'Source Sans Pro', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ui.header,
+h1,
+h2 {
+  font-weight: normal !important;
+}
+
+h1.ui.header {
+  font-size: 3em;
+}
+
+h4.ui.header,
+h5.ui.header,
+.ui.icon.header {
+  font-weight: bold !important;
+}
+.ui.menu {
+	margin: 0px;
+}
+.ui.button {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a {
+  /*color: #009fd9;*/
+  color: #545454;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00bbff;
+}
+
+p a {
+  font-weight: bold;
+}
+div.ui.labeled.icon.right.menu {margin: 30px 50px 0 0;}
+
+/*******************************
+            Global
+*******************************/
+
+.menu .right.menu > .mobile.item {
+  display: none;
+}
+
+.ui.page.grid.segment {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.masthead.segment {
+  background-image: url(images/bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: 0em;
+  padding-top: 4rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 -20px 10px 0 rgba(0, 0, 0, 0.1) inset !important;
+  box-shadow: 0 -20px 10px 0 rgba(0, 0, 0, 0.1) inset !important;
+}
+
+.masthead.segment .column {
+  position: relative;
+}
+
+.masthead.segment .information {
+  margin: 3em 1em 1em 280px;
+}
+
+.masthead.segment .information p {
+  max-width: 600px;
+  margin: 0em 0px 2em 0em;
+  font-size: 1.2em;
+}
+
+.masthead.segment h1.ui.header .sub {
+  font-size: 0.7em;
+}
+
+.masthead.segment .image {
+  position: absolute;
+  left: 0%;
+  bottom: -110px;
+}
+
+.overview .divided.grid .header + p {
+  min-height: 100px;
+}
+
+.ui.shape .icon,
+.link.list .icon {
+  margin: 0em;
+  padding: 0em;
+}
+
+.ui.cube.shape .side {
+  background-color: transparent;
+}
+
+/*******************************
+          Responsive
+*******************************/
+
+/* Mobile Only */
+
+@media only screen and (max-width : 768px) {
+  .ui.page.grid.segment {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .menu .right.menu > .item {
+    display: none;
+  }
+
+  .menu .right.menu > .mobile.item {
+    display: block;
+  }
+
+  h1.ui.header {
+    font-size: 1.5em;
+  }
+
+  .masthead.segment {
+    -webkit-background-size: auto;
+    background-size: auto;
+  }
+
+  .masthead.segment .information {
+    margin-left: 190px;
+  }
+
+  .masthead.segment .image {
+    bottom: -65px;
+    width: 150px;
+  }
+
+  .masthead.segment .button {
+    font-size: 1rem;
+  }
+
+  .overview .divided.grid .header .icon {
+    font-size: 1.5em;
+  }
+
+  .overview .divided.grid .header + p {
+    min-height: 0px;
+  }
+
+  .masthead.segment .column {
+    font-size: 0.7rem;
+  }
+
+  .masthead.segment .column p {
+    display: none;
+  }
+
+  .selection.list .right.floated {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 1000px) {
+
+}
+
+/*******************************
+          Hero
+*******************************/
+.hero { height: 600px; background-repeat: no-repeat; background-position:center; background-image:url(/front/img/clinic-hero1.jpg);}
+.herowhite{ height: 220px; margin: 100px 0; background-position: center bottom;
+	/* Fallback for web browsers that doesn't support RGBa */
+background: rgb(0, 0, 0,);
+/* RGBa with 0.3 opacity */
+background: rgba(255,255,255,0.6);
+/* For IE 5.5 - 7*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+/* For IE 8*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+.herotext {color: rgb(59,133,197); line-height: 1.3; text-align: center; font-size: x-large;vertical-align: text-top;margin: 0px; padding: 0px;}
+.herotext-sub {color: rgba(147,147,147,1); line-height: 1.3; text-align: center; font-size:large;vertical-align: text-top;margin: 0px; padding: 0px;}
+div.ui.vertical.fluid.menu {background: none;}
+.ui.menu .header.item {background: none;}
+img.top {margin: 15px 0;}
+/*******************************
+          Texto 
+*******************************/
+
+
+/*******************************
+          Images 
+*******************************/
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+.innershadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+#box {
+  position: relative;
+  width: 60%;
+  background: #ddd;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 2em 1.5em;
+  color: rgba(0,0,0, .8);
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.5;
+  margin: 60px auto;
+}
+
+
+#box:before, #box:after {
+  z-index: -1; 
+  position: absolute; 
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%; 
+  top: 80%;
+  max-width:300px;
+  background: rgba(0, 0, 0, 0.7); 
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  transform: rotate(-3deg);
+}
+
+#box:after {
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+/*--------------
+     Tabular
+---------------*/
+.ui.tabular.menu {
+  background-color: transparent;
+  border-bottom: 1px solid #DCDDDE;
+  border-radius: 0em;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.ui.tabular.menu .item {
+  background-color: #4d97cc;
+  border-left: 1px solid #DCDDDE;
+  border-right: 1px solid #DCDDDE;
+  border-top: 1px solid #DCDDDE;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 2px;
+  border-radius: 0.4875em 0.4875em 0em 0px;
+}
+.ui.tabular.menu .item:before {
+  display: none;
+}
+/* Hover */
+.ui.tabular.menu .item:hover {
+  background-color: rgb(184,202,209);
+  color: rgba(0, 0, 0, 0.8);
+}
 
 slide {
 	height: 300px !important;

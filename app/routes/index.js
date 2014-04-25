@@ -1,8 +1,9 @@
 var IndexRoute = Ember.Route.extend({
-	/*activate: function() {
-        // executes when router enters route for the first time
-            $('.filter.menu .item').tab();
-    }*/
+
+//  beforeModel: function() {
+//    this.transitionTo('up');
+//  }
+  
 });
 
 export default IndexRoute;

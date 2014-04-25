@@ -1,7 +1,7 @@
 <!-- Header -->
 <div class="ui secondary pointing menu">
   	{{#link-to 'index' class='item'}}
-    	<img class="rounded ui image" src="/vendor/nelibox/img/nelibox.png" width="230px" alt="NeliBox"/>
+    	<img class="rounded ui image" src="/front/img/nelibox.png" width="230px" alt="NeliBox"/>
 		<div class="sub header">Sistema de Gestion en la Nube</div>
 	{{/link-to}}
 		<div class="ui labeled icon right menu">
@@ -104,11 +104,12 @@
 	<div class="row">
 		<div class="column">
 			<div class="ui large divided horizontal list">
-				<div class="item"><a href="/">Inicio</a></div>
-				<div class="item"><a href="/lab">Laboratorios</a></div>
-				<div class="item"><a href="/radiologia">Radiologia</a></div>
-				<div class="item"><a href="/lab">Laboratorios</a></div>
-				<div class="item"><a href="/radiologia">Radiologia</a></div>
+				<div class="item">{{#link-to 'index' class='item'}}Inicio{{/link-to}}</div>
+				<div class="item">{{#link-to 'farmacia' class='item'}}Farmacia{{/link-to}}</div>
+				<div class="item">{{#link-to 'consultas' class='item'}}Consultas{{/link-to}}</div>
+				<div class="item">{{#link-to 'clinica' class='item'}}Clinica{{/link-to}}</div>
+				<div class="item">{{#link-to 'rayosx' class='item'}}Rayos X{{/link-to}}</div>
+				<div class="item">{{#link-to 'lab' class='item'}}Laboratorios{{/link-to}}</div>
 				<div class="item">{{#link-to 'contactar' class='item'}}Contactar{{/link-to}}</div>
 			</div>		
 		</div>
