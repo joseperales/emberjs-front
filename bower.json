@@ -16,6 +16,7 @@
     "ember-animated-outlet": "~1.0.0-beta.2",
     "animate.css": "~3.1.0",
     "modernizr": "~2.7.2",
-    "momentjs": "~2.6.0"
+    "momentjs": "~2.6.0",
+    "normalize-css": "~3.0.1"
   }
 }
