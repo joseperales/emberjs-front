@@ -205,6 +205,10 @@ div.ui.labeled.icon.right.menu {margin: 30px 50px 0 0;}
 *******************************/
 .hero { height: 600px; background-repeat: no-repeat; background-position:center; background-image:url(/front/img/clinic-hero1.jpg);}
 .heroconsul { height: 600px; background-repeat: no-repeat; background-position:center; background-image:url(/front/img/consulta-hero1.jpg);}
+.heroclinica { height: 600px; background-repeat: no-repeat; background-position:center; background-image:url(/front/img/clinic-hero-s.jpg);}
+
+
+
 .herowhite{ height: 220px; margin: 100px 0; background-position: center bottom;
 	/* Fallback for web browsers that doesn't support RGBa */
 background: rgb(0, 0, 0,);
