@@ -203,21 +203,46 @@ div.ui.labeled.icon.right.menu {margin: 30px 50px 0 0;}
 /*******************************
           Hero
 *******************************/
-.hero { height: 600px; background-repeat: no-repeat; background-position:center; background-image:url(/front/img/clinic-hero1.jpg);}
+.hero {
+background-image:url(/front/img/clinic-hero1.jpg);
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/clinic-hero1.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/clinic-hero1.jpg', sizingMethod='scale')";
+}
 .heroconsul { 
-height: 600px; 
-background-repeat: no-repeat; 
-background-position:center; 
 background-image:url(/front/img/consulta-hero1.jpg);
-  -webkit-background-size: cover;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/consulta-hero1.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/consulta-hero1.jpg', sizingMethod='scale')";
+}
+.heroclinica {
+background-image:url(/front/img/clinic-hero-s.jpg);
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/clinic-hero-s.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/clinic-hero-s.jpg', sizingMethod='scale')";
+}
+.herorayosx {
+background-image:url(/front/img/rayosx-maquinas2.jpg);
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/rayosx-maquinas2.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/rayosx-maquinas2.jpg', sizingMethod='scale')";
+}
+.herofarmacia {
+background-image:url(/front/img/farmacia-she.jpg);
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/farmacia-she.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/farmacia-she.jpg', sizingMethod='scale')";
+}
+.herolab {
+background-image:url(/front/img/lab-maquinas4.jpg);
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/lab-maquinas4.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/lab-maquinas4.jpg', sizingMethod='scale')";
+}
+.herocover {
+	height: 600px; 
+	background-repeat: no-repeat; 
+	background-position:center;  
+	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-.heroclinica { height: 600px; background-repeat: no-repeat; background-position:center; background-image:url(/front/img/clinic-hero-s.jpg);}
-.herorayosx { height: 600px; background-repeat: no-repeat; background-position:center; background-image:url(/front/img/rayosx-maquinas2.jpg);}
-
-.herowhite{ height: 220px; margin: 100px 0; background-position: center bottom;
+  }
+.herowhite{ margin: 20px 0; background-position: center bottom;
 	/* Fallback for web browsers that doesn't support RGBa */
 background: rgb(0, 0, 0,);
 /* RGBa with 0.3 opacity */
@@ -233,6 +258,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endCo
 div.ui.vertical.fluid.menu {background: none;}
 .ui.menu .header.item {background: none;}
 img.top {margin: 15px 0;}
+.divcenter {margin-right:auto;margin-left:auto; padding: 20px 0px 0px 0px;}
+.textleft {text-align: left;}
 /*******************************
           Texto 
 *******************************/

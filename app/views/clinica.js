@@ -4,6 +4,12 @@ var ClinicaView = Ember.View.extend({
   didInsertElement: function() {
     $('.filter.menu .item').tab();
   }*/
+  
+  templateName: 'clinica',
+
+  firstName: "Albert",
+  lastName: "Hofmann"
+  
 });
 
 export default ClinicaView;
