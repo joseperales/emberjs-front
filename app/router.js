@@ -14,7 +14,7 @@ Router.map(function() {
   this.route('farmacia');
   this.route('lab');
   this.route('consultas');
-  
+  this.route('social');
   //this.resource('posts', function() {
   //this.route('new');
   //});
@@ -24,8 +24,16 @@ Router.map(function() {
 //});
 // No muestra #
 Router.reopen({
-  location: 'history'
+    notifyGoogleAnalytics: function() {
+    return ga('send', 'pageview', {
+        'page': this.get('url'),
+        'title': this.get('url')
+      });
+  }.on('didTransition'),
+  location: history.pushState ? 'history' : 'hash'
+ // location: 'history'
 });
+
 
 Ember.Route.reopen({
   render: function(controller, model) {

@@ -1,15 +1,12 @@
-var ClinicaView = Ember.View.extend({
+var SocialView = Ember.View.extend({
  /* elementId: "clinica",
   //classNameBindings: ['controller.isDrawerOpen'],
   didInsertElement: function() {
     $('.filter.menu .item').tab();
   }*/
   
- // templateName: 'clinica',
-
- // firstName: "Albert",
- // lastName: "Hofmann"
+  templateName: 'social'
   
 });
 
-export default ClinicaView;
+export default SocialView;
