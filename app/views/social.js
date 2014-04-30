@@ -5,7 +5,13 @@ var SocialView = Ember.View.extend({
     $('.filter.menu .item').tab();
   }*/
   
-  templateName: 'social'
+  templateName: 'social',
+  customFunctions: function() {
+        // Custom Semantic UI logic with DOM targeting here
+        $('.ui.dropdown').dropdown({
+            // Dropdown stuff, etc
+        });
+    }.on('didInsertElement')
   
 });
 

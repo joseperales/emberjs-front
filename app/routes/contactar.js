@@ -6,7 +6,13 @@ var Person = Ember.Object.extend({
 
 
 var ContactarRoute = Ember.Route.extend({
-	
+	actions: {
+    processAPI: function () {
+      // Do your AJAX here
+      console.log(this.get('model'));
+      window.alert('It worked.');
+    }
+  },
 	model: function(){
       return Person.create();
 	},

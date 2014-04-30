@@ -12,7 +12,6 @@ var IndexRoute = Ember.Route.extend({
     setupController : function(controller, model){
         controller.set("model", model);
     }
-  
 });
 
 export default IndexRoute;

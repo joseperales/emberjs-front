@@ -24,14 +24,18 @@ Router.map(function() {
 //});
 // No muestra #
 Router.reopen({
-    notifyGoogleAnalytics: function() {
-    return ga('send', 'pageview', {
+   /* notifyGoogleAnalytics: function() {
+    return ga ('send', 'pageview', {
         'page': this.get('url'),
         'title': this.get('url')
       });
+  }.on('didTransition'),*/
+  notifyGoogleAnalytics: function() {
+    var url = this.get('url');
+    //console.log(url);
   }.on('didTransition'),
-  location: history.pushState ? 'history' : 'hash'
- // location: 'history'
+  //location: history.pushState ? 'history' : 'hash'
+  location: 'history'
 });
 
 

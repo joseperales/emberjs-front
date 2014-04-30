@@ -1,7 +1,9 @@
+
 <div class="ui page stackable segment animated fadeInUp">
 	<div class="ui horizontal icon divider">
 	  <i class="circular checkmark sign icon"></i>
 	</div>
+	<form>
 	  <div class="item">
 	    <div class="content">
 	    	<h1 class="herotext"><strong>Solo unos Datos para Contactarnos..</strong></h1>
@@ -18,18 +20,18 @@
 	  <div class="two fields">
 	    <div class="field error">
 	      <label>First Name</label>
-	      <!--<input placeholder="Nombre" name="first-name" type="text">-->
+	      
 	      {{input valueBinding="model.firstName" placeholder="Nombre"}}
 	    </div>
 	    <div class="field error">
 	      <label>Last Name</label>
-	      <!--<input placeholder="Apellido" name="last-name" type="text">-->
+	     
 	      {{input valueBinding="model.lastName" placeholder="Apellido"}}
 	    </div>
 	  </div>
 		<label>Email</label>
 		<div class="ui left icon input">
-		  <!--<input type="text" placeholder="email@suemail.com"-->
+		  
 		  {{input valueBinding="model.email" placeholder="email@suemail.com"}}
 		  <i class="mail icon"></i>
 		</div>	
@@ -41,7 +43,9 @@
 	</div>
 	  <br>	
 	  <div class="ui clearing divider"></div>
-	  <div class="ui blue submit button" {{action submitAction target="controller"}}>Enviar</div>
+	  <!--<div class="ui blue submit button" {{action submitAction target="controller"}}>Enviar</div>-->
+	  <button {{action 'addPerson'}}>Enviar</button>
+    </form>
 	</div>
 </div>
 
