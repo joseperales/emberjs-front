@@ -1,4 +1,3 @@
-
 var SocialController = Ember.Controller.extend({
 
 });

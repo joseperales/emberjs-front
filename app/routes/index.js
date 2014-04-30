@@ -1,8 +1,10 @@
 var Person = Ember.Object.extend({
-    firstName : "",
+    name : "",
     lastName : "",
-    email : ""
+    email : "",
+    message : ""
 });
+export default Person;
 
 var IndexRoute = Ember.Route.extend({
 

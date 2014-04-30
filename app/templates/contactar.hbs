@@ -1,15 +1,16 @@
+ 
 
 <div class="ui page stackable segment animated fadeInUp">
-	<div class="ui horizontal icon divider">
-	  <i class="circular checkmark sign icon"></i>
-	</div>
+
+	<div id="contact" class="section contact gray">
 	<form>
 	  <div class="item">
 	    <div class="content">
 	    	<h1 class="herotext"><strong>Solo unos Datos para Contactarnos..</strong></h1>
 	      <h2 class="ui statistic">Y pronto atenderemos y le responderemos.</h2>
-	      <h2>{{model.firstName}}   {{model.lastName}}</h2>
+	      <h2>{{model.Name}}   {{model.lastName}}</h2>
 	      <h2>{{model.email}}</h2>
+	      <h2>{{model.message}}</h2>
 	    </div>
 	  </div>
 	
@@ -20,8 +21,7 @@
 	  <div class="two fields">
 	    <div class="field error">
 	      <label>First Name</label>
-	      
-	      {{input valueBinding="model.firstName" placeholder="Nombre"}}
+	      {{input valueBinding="model.Name" placeholder="Nombre"}}
 	    </div>
 	    <div class="field error">
 	      <label>Last Name</label>
@@ -38,16 +38,28 @@
 		<div class="ui form">
 	  <div class="field">
 	    <label>Detalles</label>
-	    <textarea></textarea>
+	    {{textarea valueBinding="model.message" id="message" name="message"}}
 	  </div>
 	</div>
 	  <br>	
 	  <div class="ui clearing divider"></div>
-	  <!--<div class="ui blue submit button" {{action submitAction target="controller"}}>Enviar</div>-->
-	  <button {{action 'addPerson'}}>Enviar</button>
+	  <!--<div class="ui blue submit button" {{action submitAction target="controller"}}>Enviar</div>
+	  <button {{action 'addPerson'}}>Enviar</button>-->
+	  <div class="ui blue submit button" {{action 'Contacto'}}>Enviar</div>
+	  <a id="button-send" href="#" title="Send Email" class="button" style="width:100%;"></a>
+	  {{#if uploading}}
+	  <div id="success">Tu requerimiento ha sido enviado!</div>
+	  <div id="error">No Disponemos de Email Ahora, por favor intente m&aacute;s tarde.</div>
+	   {{else}}
+	   <div class="item">{{loading}}</div>
+	   {{/if}}
     </form>
 	</div>
+	</div>
 </div>
+	<div class="ui horizontal icon divider">
+	  <i class="circular checkmark sign icon"></i>
+	</div>
 
 <!--
 <div id="contact" class="section contact gray">
