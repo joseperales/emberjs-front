@@ -1074,6 +1074,11 @@ table {
 	padding-bottom: 0px;
 	margin-bottom: 4px;
 }
+.text-just{
+	text-align: justify;
+	padding-bottom: 0px;
+	margin-bottom: 4px;
+}
 .text-right{
 	text-align: right;
 	padding-bottom: 0px;
