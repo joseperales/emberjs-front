@@ -18,6 +18,7 @@
     "modernizr": "~2.7.2",
     "momentjs": "~2.6.0",
     "normalize-css": "~3.0.1",
-    "ember-validations": "*"
+    "ember-validations": "*",
+    "impress.js": "~0.5.3"
   }
 }
