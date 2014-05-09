@@ -1131,3 +1131,12 @@ table {
 .button:hover{
 	background-color: #0e892b;
 }
+
+.error {
+  display: block;
+  margin-top: 6px;
+}
+
+.has-error .error {
+  color: #b94a48;
+}

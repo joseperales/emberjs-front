@@ -1,18 +1,18 @@
 //var ContactarController = Ember.Controller.extend({
 export default Ember.ObjectController.extend(Ember.Validations.Mixin,{
 	actions: {
-		Contacto: function() {	
- 
+		Contacto: function() {
 			//$('.massive.rocket.icon').transition('scale');
 				
-			var name = this.get('model.Name');
-			var lastName = this.get('model.lastName');
+			var name = this.get('model.nombre');
+			var lastname = this.get('model.apellido');
 			var email = this.get('model.email');
-			var message = this.get('model.message');
+			var message = this.get('model.mensaje');
+			
 			$.ajax({
 			type: 'POST',
 			url: '/front/send_form_email.php',
-			data: {'name':name, 'email':email, 'message':message},
+			data: {'name':name,'lastname':lastname, 'email':email, 'message':message},
 			dataType : "json",
 			success: function(html) {
 				if(html.success === '1')
@@ -31,31 +31,27 @@ export default Ember.ObjectController.extend(Ember.Validations.Mixin,{
 				$('#error').show();
 			}
 		});
-		this.transitionToRoute('social');
+		this.transitionToRoute('gracias');
 		}
 	},
 	validations: {
-		name: {
-			presence: { message: "Field is required." },
-			length: { minimum: 3, messages: { tooShort: "Must be at least 3 characters." } }
-		} 
-      //property1: {
-		//	format: { with: /^([A-Z]|\d)+$/, allowBlank: true, message: 'Value must comprise of capital letters and numbers only.'  }
-	//	}
-		/*, property2: {
-			length: { minimum: 2, messages: { tooShort: "Value must be at least 2 characters." } },
-			evilValidator: true
+		nombre: {
+				format: { with: /^([a-zA-Z]|\d)+$/, allowBlank: false, message: 'Por favor Letras y/o Numeros solamente'},
+				length: { minimum: 3, messages: { tooShort: "3 Caracteres Minimo." } } 
+        },
+		apellido: {
+				format: { with: /^([a-zA-Z]|\d)+$/, allowBlank: false, message: 'Por favor Letras y/o Numeros solamente'  },
+				length: { minimum: 3, messages: { tooShort: "3 Caracteres Minimo." } }
+		},
+		email:{ 
+				presence: { message: "Campo Requerido." },
+				format: { with: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ , allowBlank: false, message: 'Por favor email correcto'}
+				//length: { minimum: 15, messages: { tooShort: "5 Caracteres Minimo." } }	
+        },
+		mensaje: {
+				//presence: { message: "Field is required." },
+				length: { minimum: 5, messages: { tooShort: "Escribe tu Mensaje en forma Clara. Minimo 5 Letras" } }
 		}
-		, property3: {
-			valueIsUnique: true
-		}*/
-		/*, property4: {
-			presence: { message: "Field is required." },
-			length: { minimum: 3, messages: { tooShort: "Must be at least 3 characters." } }
-		}
-		, property5: {
-			presence: { message: "Field is required." }
-		}*/
 	},
 
 	/*create: function () {
@@ -66,8 +62,8 @@ export default Ember.ObjectController.extend(Ember.Validations.Mixin,{
 		var errors = this.get("errors");
 		var flattenedArray = [];
 		var properties = Ember.keys(errors);
-		//var messages;
-		//var modifiedMessages;
+		var messages;
+		var modifiedMessages;
 
 		properties.forEach(function (property) {
 		var	messages = errors.get(property);
@@ -79,17 +75,11 @@ export default Ember.ObjectController.extend(Ember.Validations.Mixin,{
 		});
 
 		return flattenedArray.sort();
-	}.property("errors.name.@each"
-		//, "errors.property1.@each"
-		//, "errors.property2.@each"
-		//, "errors.property3.@each"
-		//, "errors.property4.@each"
-		//, "errors.property5.@each"
+	}.property(
+				"errors.nombre.@each",
+				"errors.email.@each",
+				"errors.mensaje.@each",
+				"errors.apellido.@each"
 	)
 	
 });
-//export default ContactarController;
-
-
-
-//});

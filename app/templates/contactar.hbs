@@ -11,18 +11,16 @@
     <div class="ui fluid form segment">
       <h3 class="ui header">Mensaje a enviar:</h3>
        <div class="field">
-        <h2>Hola les escribe <strong>{{name}} {{model.lastName}}</strong> mi email es <strong>{{model.email}}</strong> mi contacto es por lo siguiente:</h2>
-        <h2><strong>{{model.message}}</strong></h2>
-        <i class="massive rocket icon"></i>
-           <div>
-      <h3>Flattened Errors Array for Debugging</h3>
-      <ul>
-      {{#each message in debuggingErrors}}
-        <li>{{message}}</li>
-      {{/each}}
-      </ul>
-    </div>
+        	<h2>Hola les escribe <strong>{{nombre}} {{apellido}}</strong> mi email es <strong>{{email}}</strong> mi contacto es por lo siguiente:</h2>
+			<h2><strong>{{mensaje}}</strong></h2>
       </div>
+    </div>
+     <div class="ui red header">
+       
+      {{#each message in debuggingErrors}}
+         
+      {{/each}}
+     
     </div>
   </div>
   <div class="column">
@@ -31,32 +29,46 @@
       <div class="two fields">
         <div class="field">
           <label>Nombre</label>
-          {{input type="text" placeholder="Nombre" class="error" id="thing_name" value=name}}
-           <div class="ui pointing label">Required field and minimum length (>=3).</div>
+          {{input type="text" placeholder="Nombre" class="error" id="thing_name" value=nombre}}
+          {{#if errors.nombre.firstObject}}
+            <div class="ui red pointing above ui label">{{errors.nombre.firstObject}}</div>
+          {{/if}}
+        </div>
+       <!-- {{#if errors.mensaje.firstObject}}
+        	<div class="field error">
+         {{/if}}-->
+        <div class="field">
+          <label>Apellido</label>
+          {{input type="text" placeholder="Apellido" value=apellido}}
+          {{#if errors.apellido.firstObject}}
+            <div class="ui red pointing above ui label">{{errors.apellido.firstObject}}</div>
+          {{/if}}
+        </div>
+      </div>
+      
+	  	<!-- <div {{bind-attr class=":form-group errors.email.firstObject:has-error"}}>-->
+        <label>Email</label>
+        <div class="ui left icon input">
+        	{{input type="text" placeholder="Agrega tu email" value=email}}
+			<i class="mail icon"></i>
+	          {{#if errors.email.firstObject}}
+	            <div class="ui red pointing above ui label">{{errors.email.firstObject}}</div>
+	          {{/if}}
         </div>
         <div class="field">
-          <label>Last Name</label>
-          {{input valueBinding="model.lastName" placeholder="Apellido"}}
-           <div class="ui pointing label">Required field and minimum length (>=3).</div>
-        </div>
-      </div>
-      <div class="field">
-		<label>Email</label>
-		<div class="ui left icon input">
-		  {{input valueBinding="model.email" placeholder="email@suemail.com"}}
-		  <i class="mail icon"></i>
-		</div>
-      </div>
-      <div class="field">
         <label>Mensaje</label>
-        {{textarea valueBinding="model.message" id="message" name="message"}}
-      </div>
-      <div class="ui labeled blue toggle submit button" {{action 'Contacto' bind-attr disabled="isInvalid"}}><i class="mail icon"></i>Enviar</div>
-      <button type="submit" class="btn btn-primary" {{bind-attr disabled="isInvalid"}}>Create</button>
+        {{textarea valueBinding="mensaje" id="message" name="message"}}
+		{{#if errors.mensaje.firstObject}}
+	        <div class="ui red pointing above ui label">{{errors.mensaje.firstObject}}</div>
+	    {{/if}}
+        </div>
+      <!--<div class="ui labeled blue toggle submit button" {{action 'Contacto' bind-attr disabled="isInvalid"}}><i class="mail icon"></i>Enviar</div>-->
+      <button type="submit" class="btn button" {{bind-attr disabled="isInvalid"}} {{action 'Contacto'}}><i class="mail icon"></i>Enviar</button>
       <div class="ui error message"></div>
     </div>
   </div>
 </div>
 </form>
+<div class="ui clearing divider"></div>
 
  

@@ -86,7 +86,3 @@ Ember.View.reopen({
     //  } 
   }
 });
- 
-
-
-

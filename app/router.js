@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('lab');
   this.route('consultas');
   this.route('social');
+  this.route('gracias');
   //this.resource('posts', function() {
   //this.route('new');
   //});
