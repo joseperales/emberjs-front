@@ -1,8 +1,6 @@
-//var ContactarController = Ember.Controller.extend({
 export default Ember.ObjectController.extend(Ember.Validations.Mixin,{
 	actions: {
 		Contacto: function() {
-			//$('.massive.rocket.icon').transition('scale');
 				
 			var name = this.get('model.nombre');
 			var lastname = this.get('model.apellido');
@@ -53,11 +51,6 @@ export default Ember.ObjectController.extend(Ember.Validations.Mixin,{
 				length: { minimum: 5, messages: { tooShort: "Escribe tu Mensaje en forma Clara. Minimo 5 Letras" } }
 		}
 	},
-
-	/*create: function () {
-		Ember.Logger.log("Send thing to server: ", this.get("model"));
-	},*/
-
 	debuggingErrors: function () {
 		var errors = this.get("errors");
 		var flattenedArray = [];
@@ -81,5 +74,4 @@ export default Ember.ObjectController.extend(Ember.Validations.Mixin,{
 				"errors.mensaje.@each",
 				"errors.apellido.@each"
 	)
-	
 });

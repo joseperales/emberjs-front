@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jose Perales -- Software Engineer -- @joseperales
 
 # THANKS
 
-    <name>
+    All Friends that help to build Nelibox
 
 # TECHNOLOGY COLOPHON
 

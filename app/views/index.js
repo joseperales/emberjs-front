@@ -2,7 +2,8 @@ var IndexView = Ember.View.extend({
  // elementId: "clinica",
   //classNameBindings: ['controller.isDrawerOpen'],
   didInsertElement: function() {
-    $('.filter.menu .item').tab();
+  // Ini Tabs Semantic
+   // $('.filter.menu .item').tab();
     this._super();
 	Ember.run.scheduleOnce('afterRender', this, this.afterRenderEvent);
   },

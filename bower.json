@@ -19,6 +19,7 @@
     "momentjs": "~2.6.0",
     "normalize-css": "~3.0.1",
     "ember-validations": "*",
-    "impress.js": "~0.5.3"
+    "impress.js": "~0.5.3",
+    "jquery-address": "*"
   }
 }
