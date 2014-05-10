@@ -205,32 +205,32 @@ div.ui.labeled.icon.right.menu {margin: 30px 50px 0 0;}
 *******************************/
 .hero {
 background-image:url(/front/img/clinic-hero1.jpg);
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/clinic-hero1.jpg', sizingMethod='scale');
+hack _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/clinic-hero1.jpg', sizingMethod='scale');
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/clinic-hero1.jpg', sizingMethod='scale')";
 }
 .heroconsul { 
 background-image:url(/front/img/consulta-hero1.jpg);
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/consulta-hero1.jpg', sizingMethod='scale');
+hack _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/consulta-hero1.jpg', sizingMethod='scale');
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/consulta-hero1.jpg', sizingMethod='scale')";
 }
 .heroclinica {
 background-image:url(/front/img/clinic-hero-s.jpg);
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/clinic-hero-s.jpg', sizingMethod='scale');
+hack _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/clinic-hero-s.jpg', sizingMethod='scale');
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/clinic-hero-s.jpg', sizingMethod='scale')";
 }
 .herorayosx {
 background-image:url(/front/img/rayosx-maquinas2.jpg);
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/rayosx-maquinas2.jpg', sizingMethod='scale');
+hack _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/rayosx-maquinas2.jpg', sizingMethod='scale');
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/rayosx-maquinas2.jpg', sizingMethod='scale')";
 }
 .herofarmacia {
 background-image:url(/front/img/farmacia-she.jpg);
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/farmacia-she.jpg', sizingMethod='scale');
+hack _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/farmacia-she.jpg', sizingMethod='scale');
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/farmacia-she.jpg', sizingMethod='scale')";
 }
 .herolab {
 background-image:url(/front/img/lab-maquinas4.jpg);
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/lab-maquinas4.jpg', sizingMethod='scale');
+hack _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/lab-maquinas4.jpg', sizingMethod='scale');
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/front/img/lab-maquinas4.jpg', sizingMethod='scale')";
 }
 .herocover {
@@ -248,7 +248,7 @@ background: rgb(0, 0, 0,);
 /* RGBa with 0.3 opacity */
 background: rgba(255,255,255,0.6);
 /* For IE 5.5 - 7*/
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+hack _filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
 /* For IE 8*/
 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
