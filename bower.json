@@ -20,6 +20,9 @@
     "normalize-css": "~3.0.1",
     "ember-validations": "*",
     "impress.js": "~0.5.3",
-    "jquery-address": "*"
+    "jquery-address": "*",
+    "session.js": "~0.4.1",
+    "quicksand": "~1.2.2",
+    "fullcalendar": "~1.6.4"
   }
 }
