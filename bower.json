@@ -21,7 +21,6 @@
     "ember-validations": "*",
     "impress.js": "~0.5.3",
     "jquery-address": "*",
-    "session.js": "~0.4.1",
     "quicksand": "~1.2.2",
     "fullcalendar": "~1.6.4"
   }
